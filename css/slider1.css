@@ -32,7 +32,7 @@ body{
 
 }  
 
-#green {
+.green {
 	background-color: #3bad65;
 	
 }
@@ -48,7 +48,6 @@ body{
 	overflow: hidden;  
 	display: none;
 	top:0vh;
-	-webkit-transform-style: preserve-3d;
 }         
                       
 #banner .oneByOne_item span{
@@ -68,7 +67,7 @@ body{
 	margin: 120px 12px 0 120px;
 	color: #FFFFFF;	
 	font-size: 24px;  
-	padding: 8px;            
+	padding: 8px;             
 }
  
 #banner .oneByOne_item span.slide2Txt2{ 
@@ -78,7 +77,7 @@ body{
 	margin: 6px 12px 0 120px;
 	color: #FFFFFF;	
 	font-size: 14px;  
-	padding: 8px;            
+	padding: 8px;             
 }   
 
 #banner .oneByOne_item span.slide2Txt3{ 
@@ -96,21 +95,18 @@ body{
 	top: 20vh;
 	left: 60vw;
 	width:35vw;
-	-webkit-transform-style: preserve-3d;
 }
 #banner img.createImg2{
 	position: absolute;
 	top: 20vh;
 	left: 60vw;
 	width:35vw;
-	-webkit-transform-style: preserve-3d;
 }              
 #banner img.createImg3{
 	position: absolute;
 	top: 20vh;
 	left: 60vw;
 	width:35vw;
-	-webkit-transform-style: preserve-3d;
 }  
 
 #banner img.createImg4{

@@ -341,8 +341,8 @@ $(document).ready(function() {
 			resetCondition = true;
 		});
 		//====
-
-		$(allInView);
+  		
+  		$(allInView);
 		$(window).scroll(allInView);
 
 
@@ -366,7 +366,7 @@ $(document).ready(function() {
     	console.log('heights');
 	    automaticPlaying = true;
 	    startSlideShow();
-	} else if (isScrolledIntoView($("#CV"))){
+	} else if (isScrolledIntoView($("#banner3"))){
     	console.log('heights');
 	    automaticPlaying = true;
 	    startSlideShow();
@@ -377,37 +377,6 @@ $(document).ready(function() {
 		nextBanner();
 	}
 }
-
-//     if (isScrolledIntoView($(".page2"))) $(".page2").css("backgroundColor", "green");
-//     else $(".page2").css("backgroundColor", "#333");
-
-//     if (isScrolledIntoView($(".page3"))) $(".page3").css("backgroundColor", "yellow");
-//     else $(".page3").css("backgroundColor", "#222");
-
-//     if (isScrolledIntoView($(".page4"))) $(".page4").css("backgroundColor", "blue");
-//     else $(".page4").css("backgroundColor", "#111");
-
-// }
-  		
-  	// 	$(function(){
-  	// 	$(window).scroll(function () {
-	  //    var currentScroll = $(window).scrollTop();  
-	  //    if (currentScroll >= 600 && currentScroll <= 1500) {
-	  //    	console.log('heights');
-	  //    	automaticPlaying = true;
-	  //    	startSlideShow();
-	  //    } else if (currentScroll >= 2500 && currentScroll <= 3500){
-	  //    	console.log('heights');
-	  //    	automaticPlaying = true;
-	  //    	startSlideShow();
-	  //    } else {
-			// 	console.log('do nothing');
-			// 	stopSlideShow();
-			// 	resetCondition = true;
-			// 	nextBanner();
-	  //    }
-			// });
-  	// });
 	
 	
 	   	function stopSlideShow() {
