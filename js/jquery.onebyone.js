@@ -342,25 +342,41 @@ $(document).ready(function() {
 		});
 		//====
   		
-  		$(function(){
-  		$(window).scroll(function () {
-	     var currentScroll = $(window).scrollTop();  
-	     if (currentScroll >= 600 && currentScroll <= 1500) {
-	     	console.log('heights');
-	     	automaticPlaying = true;
-	     	startSlideShow();
-	     } else if (currentScroll >= 2500 && currentScroll <= 3500){
-	     	console.log('heights');
-	     	automaticPlaying = true;
-	     	startSlideShow();
-	     } else {
-				console.log('do nothing');
-				stopSlideShow();
-				resetCondition = true;
-				nextBanner();
-	     }
-			});
-  	});
+  		$(allInView);
+		$(window).scroll(allInView);
+
+
+		function isScrolledIntoView(slide) {
+    	var docViewTop = $(window).scrollTop();
+    	var docViewBottom = docViewTop + $(window).height();
+
+    	var slideTop = $(slide).offset().top;
+    	var slideBottom = slideTop + $(slide).height();
+
+    	return ((slideBottom <= docViewBottom) && (slideTop >= docViewTop));
+		}
+
+		function allInView() {
+
+    if (isScrolledIntoView($("#banner"))){
+    	console.log('heights');
+	    automaticPlaying = true;
+	    startSlideShow();
+    } else if (isScrolledIntoView($("#banner2"))){
+    	console.log('heights');
+	    automaticPlaying = true;
+	    startSlideShow();
+	} else if (isScrolledIntoView($("#banner3"))){
+    	console.log('heights');
+	    automaticPlaying = true;
+	    startSlideShow();
+	} else {
+		console.log('do nothing');
+		stopSlideShow();
+		resetCondition = true;
+		nextBanner();
+	}
+}
 	
 	
 	   	function stopSlideShow() {
