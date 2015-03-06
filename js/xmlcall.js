@@ -36,7 +36,7 @@ $(document).ready(function(){
 
         function backupData(){
             // add backup total registered companies
-        $(".owl-carousel .slide1 .button-box").prepend("<span class='count-num'>"+07965+"</span>");
+        $(".owl-carousel .slide1 .button-box").prepend("<span class='count-num'>"+56970+"</span>");
         
         //add backup total new companies
         $(".owl-carousel .slide2 .button-box").prepend("<span class='count-num'>"+107+"</span>");
